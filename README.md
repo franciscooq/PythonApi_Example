@@ -1,4 +1,3 @@
-# Exemplo de API Python usando Flask e Swagger UI
+# Exemplo de API Python usando Flask
 - Python 
 - Flask
-- Swagger UI
