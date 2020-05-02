@@ -1,6 +1,21 @@
 from flask import Flask, jsonify, request
 
-app = Flask(__name__)
+api = Flask(__name__)
 
+Users = [
+    {
+        "Name": "Francisco O. Queiroz",
+        "Age": 30,
+        "Email":"franciscooq@yahoo.com.br"
+    }
+]
+
+#Metodos
+@api.route('/Users',methods=['GET'])
+def Home():
+    return jsonify(Users), 200
+
+
+#Garante o Start da aplicação
 if  __name__ == '__main__':
-    app.run(debug=True)
+    api.run(debug=True)
