@@ -10,12 +10,12 @@ Users = [
     }
 ]
 
-#Metodos
+#Methods
 @api.route('/Users',methods=['GET'])
 def Home():
     return jsonify(Users), 200
 
 
-#Garante o Start da aplicação
+#Inicializa Aplicação
 if  __name__ == '__main__':
     api.run(debug=True)
